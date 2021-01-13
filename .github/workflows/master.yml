@@ -28,5 +28,7 @@ jobs:
       # Runs a single command using the runners shell
       - name: Run a one-line script
         run: echo $ORANGEFILE
+        run: echo $REDFILE
         env: 
-          ORANGEFILE : Oh Wow ! I turned Orange ! lol :D
+          ORANGEFILE : $REDFILE
+          REDFILE: ok I'm Red Now ! :P
