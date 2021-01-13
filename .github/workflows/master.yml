@@ -6,9 +6,9 @@ name: Not-Really-Creativity
 on:
   # Triggers the workflow on push or pull request events but only for the main branch
   push:
-    branches: [ master123 ]
+    branches: [ main ]
   pull_request:
-    branches: [ master123 ]
+    branches: [ main ]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -28,7 +28,5 @@ jobs:
       # Runs a single command using the runners shell
       - name: Run a one-line script
         run: echo $ORANGEFILE
-        run: echo $REDFILE
         env: 
-          ORANGEFILE : $REDFILE
-          REDFILE: ok I'm Red Now !
+          ORANGEFILE : WoW ! Did I Just Turn Orange ?! 
